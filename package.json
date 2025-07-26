@@ -118,11 +118,15 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
     "@hookform/resolvers": "latest",
     "@next/bundle-analyzer": "latest",
     "@playwright/test": "latest",
+    "@storybook/addon-a11y": "9.0.18",
+    "@storybook/addon-docs": "9.0.18",
     "@storybook/addon-links": "latest",
-    "@storybook/nextjs": "latest",
+    "@storybook/addon-onboarding": "^9.0.18",
+    "@storybook/addon-vitest": "9.0.18",
     "@testing-library/jest-dom": "latest",
     "@types/node": "^22.16.5",
     "@types/react": "^19.1.8",
@@ -137,6 +141,7 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "15.2.4",
     "eslint-config-prettier": "latest",
+    "eslint-plugin-storybook": "9.0.18",
     "happy-dom": "latest",
     "jsdom": "latest",
     "knip": "latest",
@@ -149,7 +154,8 @@
     "typescript": "^5.8.3",
     "vite": "latest",
     "vitest": "latest",
-    "eslint-plugin-storybook": "9.0.18",
-    "@storybook/addon-docs": "9.0.18"
+    "@storybook/nextjs-vite": "^9.0.18",
+    "playwright": "^1.54.1",
+    "@vitest/coverage-v8": "^3.2.4"
   }
 }
