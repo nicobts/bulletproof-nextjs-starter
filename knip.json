@@ -1,0 +1,10 @@
+{
+  "entry": [
+    "src/app/**/*.{js,jsx,ts,tsx}",
+    "src/pages/**/*.{js,jsx,ts,tsx}",
+    "src/components/**/*.{js,jsx,ts,tsx}",
+    "src/lib/**/*.{js,jsx,ts,tsx}"
+  ],
+  "project": ["src/**/*.{js,jsx,ts,tsx}"],
+  "ignore": ["**/*.stories.{js,jsx,ts,tsx}", "**/*.test.{js,jsx,ts,tsx}", "**/*.spec.{js,jsx,ts,tsx}"]
+}
