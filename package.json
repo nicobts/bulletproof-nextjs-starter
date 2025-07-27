@@ -88,6 +88,7 @@
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.3",
     "embla-carousel-react": "latest",
+    "eslint-plugin-import": "^2.32.0",
     "gel": "latest",
     "http": "latest",
     "input-otp": "latest",

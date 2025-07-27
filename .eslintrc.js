@@ -5,6 +5,8 @@ module.exports = {
     'prettier',
     '@typescript-eslint/recommended',
     'plugin:storybook/recommended',
+    'eslint:recommended',
+    'plugin:import/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
