@@ -7,55 +7,55 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const nextConfig: NextConfig = {
   // Enable standalone output for Docker
-  output: "standalone",
+  output: 'standalone',
 
   experimental: {
     typedRoutes: true,
   },
 
-  eslint: {
-    ignoreDuringBuilds: process.env.NODE_ENV === "production",
-  },
+  // eslint: {
+  //   ignoreDuringBuilds: process.env.NODE_ENV === "production",
+  // },
 
-  typescript: {
-    ignoreBuildErrors: process.env.NODE_ENV === "production",
-  },
+  // typescript: {
+  //   ignoreBuildErrors: process.env.NODE_ENV === "production",
+  // },
 
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "images.clerk.dev",
+        protocol: 'https',
+        hostname: 'images.clerk.dev',
       },
       {
-        protocol: "https",
-        hostname: "img.clerk.com",
+        protocol: 'https',
+        hostname: 'img.clerk.com',
       },
     ],
-    unoptimized: process.env.NODE_ENV === "development",
+    unoptimized: process.env.NODE_ENV === 'development',
   },
 
   // Security headers
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: '/(.*)',
         headers: [
           {
-            key: "X-Frame-Options",
-            value: "DENY",
+            key: 'X-Frame-Options',
+            value: 'DENY',
           },
           {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
           },
           {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
           },
           {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
           },
         ],
       },
@@ -66,8 +66,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/home",
-        destination: "/",
+        source: '/home',
+        destination: '/',
         permanent: true,
       },
     ]
@@ -77,8 +77,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/api/v1/:path*",
-        destination: "/api/:path*",
+        source: '/api/v1/:path*',
+        destination: '/api/:path*',
       },
     ]
   },
