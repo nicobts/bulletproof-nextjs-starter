@@ -1,4 +1,3 @@
-import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import { env } from '@/env'
 import { ClerkProvider } from '@clerk/nextjs'
@@ -9,8 +8,9 @@ import '../../styles/globals.css'
 
 import { rootMetadata } from '#/config/root-metadata'
 import { routing } from '@/i18n/routing'
-import { hasLocale, NextIntlClientProvider } from 'next-intl'
+import { hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
+import { RootWrapper } from './root-wrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,15 +34,8 @@ export default async function RootLayout({
     >
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <NextIntlClientProvider>{children}</NextIntlClientProvider>
-            <Toaster />
-          </ThemeProvider>
+          <RootWrapper locale={locale}>{children}</RootWrapper>
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
