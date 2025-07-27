@@ -1,6 +1,28 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { createEdgeRouter } from 'next-connect'
+import type { NextFetchEvent, NextRequest } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export default clerkMiddleware();
+import { clerkMiddleware } from '@clerk/nextjs/server'
+import createMiddleware from 'next-intl/middleware'
+import { routing } from './i18n/routing'
+
+// export default clerkMiddleware();
+// export default createMiddleware(routing);
+
+const router = createEdgeRouter<NextRequest, NextFetchEvent>()
+
+router.use(async (request, event, next) => {
+  console.log(`${request.method} ${request.url}`)
+  return next()
+})
+
+router.use(clerkMiddleware())
+router.use(() => createMiddleware(routing))
+
+router.all(() => NextResponse.next())
+export function middleware(request: NextRequest, event: NextFetchEvent) {
+  return router.run(request, event)
+}
 
 export const config = {
   matcher: [
@@ -9,4 +31,4 @@ export const config = {
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
-};
+}
