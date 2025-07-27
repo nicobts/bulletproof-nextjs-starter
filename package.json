@@ -27,7 +27,8 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:watch": "vitest --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "knip": "knip"
   },
   "dependencies": {
     "@aws-sdk/client-rds-data": "latest",
@@ -119,6 +120,7 @@
     "@storybook/addon-links": "latest",
     "@storybook/addon-onboarding": "^9.0.18",
     "@storybook/addon-vitest": "9.0.18",
+    "@storybook/nextjs-vite": "^9.0.18",
     "@testing-library/jest-dom": "latest",
     "@types/node": "^22.16.5",
     "@types/react": "^19.1.8",
@@ -126,6 +128,7 @@
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "@vitejs/plugin-react": "latest",
+    "@vitest/coverage-v8": "^3.2.4",
     "@vitest/ui": "latest",
     "autoprefixer": "^10.4.21",
     "cross-env": "latest",
@@ -136,7 +139,8 @@
     "eslint-plugin-storybook": "9.0.18",
     "happy-dom": "latest",
     "jsdom": "latest",
-    "knip": "latest",
+    "knip": "^5.62.0",
+    "playwright": "^1.54.1",
     "postcss": "^8.5.6",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
@@ -145,9 +149,6 @@
     "tsx": "latest",
     "typescript": "^5.8.3",
     "vite": "latest",
-    "vitest": "latest",
-    "@storybook/nextjs-vite": "^9.0.18",
-    "playwright": "^1.54.1",
-    "@vitest/coverage-v8": "^3.2.4"
+    "vitest": "latest"
   }
 }
