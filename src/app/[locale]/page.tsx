@@ -1,7 +1,7 @@
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+// import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import { ArrowRight, Code2, Database, Palette, Shield, Sparkles, TestTube, Zap } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 
@@ -46,7 +46,7 @@ export default async function HomePage() {
           </div>
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <SignedIn>
+            {/* <SignedIn>
               <UserButton />
             </SignedIn>
             <SignedOut>
@@ -59,7 +59,7 @@ export default async function HomePage() {
               >
                 Get Started
               </Button>
-            </SignedOut>
+            </SignedOut> */}
           </div>
         </div>
       </header>
