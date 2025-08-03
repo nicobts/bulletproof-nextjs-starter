@@ -2,6 +2,19 @@
   "name": "nextjs-boilerplate",
   "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Yeasin",
+    "email": "mdkawsarislam2002@gmail.com",
+    "url": "https://github.com/yeasin2002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeasin2002/nextjs-starter-template"
+  },
+  "homepage": "https://github.com/yeasin2002/nextjs-starter-template",
+  "bugs": {
+    "url": "https://github.com/yeasin2002/nextjs-starter-template/issues"
+  },
   "scripts": {
     "analyze": "cross-env ANALYZE=true next build",
     "build": "next build",
