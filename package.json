@@ -46,7 +46,6 @@
   },
   "dependencies": {
     "@aws-sdk/client-rds-data": "latest",
-    "@clerk/nextjs": "latest",
     "@cloudflare/workers-types": "latest",
     "@edge-runtime/vm": "latest",
     "@libsql/client": "latest",
