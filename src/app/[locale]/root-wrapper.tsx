@@ -1,8 +1,8 @@
 'use client'
 
-import { useScan } from 'react-scan'
+// import { useScan } from 'react-scan'
 
-import { hasLocale, NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import React from 'react'
 import { ThemeProvider } from '../../components/theme-provider'
 
