@@ -72,13 +72,18 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 git clone https://github.com/yeasin2002/nextjs-starter-template.git
 cd nextjs-starter-template
 
+# Quick setup (recommended)
+npm run setup
+
+# Or manual setup:
 # Install dependencies
 npm install
 # or
 bun install
 
 # Copy environment variables
-cp .env.example .env
+cp .env.example .env  # Linux/Mac
+# copy .env.example .env  # Windows
 
 # Set up your database URL and other environment variables
 # Edit .env file with your configuration
@@ -102,10 +107,12 @@ Visit [http://localhost:3000](http://localhost:3000) to see your application.
 
 ### 🔧 **Development**
 ```bash
+npm run setup        # Quick project setup
 npm run dev          # Start development server
 npm run build        # Build for production
 npm run start        # Start production server
 npm run type-check   # TypeScript type checking
+npm run clean        # Clean build artifacts
 ```
 
 ### 🗄️ **Database**
@@ -138,9 +145,13 @@ npm run codehawk     # Analyze code quality
 ### 🐳 **Docker**
 ```bash
 npm run docker:build # Build Docker image
-npm run docker:dev   # Run development container
-npm run docker:prod  # Run production container
-npm run docker:test  # Run test container
+npm run docker:dev   # Run development container (Linux/Mac)
+scripts/docker-dev.bat # Windows
+npm run docker:prod  # Run production container (Linux/Mac)
+npm run docker:test  # Run test container (Linux/Mac)
+
+# Windows users can also use:
+# scripts/docker-dev.bat  # Run development container (Windows)
 ```
 
 ### 📚 **Storybook**
