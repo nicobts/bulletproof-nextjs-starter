@@ -21,7 +21,7 @@
     "build-storybook": "storybook build",
     "clean": "node scripts/clean.js",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit push:pg",
+    "db:migrate": "drizzle-kit migrate",
     "db:seed": "tsx scripts/seed.ts",
     "db:studio": "drizzle-kit studio",
     "dev": "next dev",
