@@ -20,7 +20,7 @@
     "build": "next build",
     "build-storybook": "storybook build",
     "clean": "node scripts/clean.js",
-    "db:generate": "drizzle-kit generate:pg",
+    "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit push:pg",
     "db:seed": "tsx scripts/seed.ts",
     "db:studio": "drizzle-kit studio",
