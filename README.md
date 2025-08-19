@@ -1,8 +1,13 @@
 # 🚀 Next.js Starter Template
 
 A production-ready Next.js boilerplate with modern tooling, comprehensive testing, and enterprise-grade features.
+### ⭐ **Star this repository if it helped you!** 
 
-> 💫 **Built with love by [Yeasin](https://github.com/yeasin2002)** 
+> 💫 **Built with love by [Yeasin](https://github.com/yeasin2002)**  and other contributor
+
+##### If you found  any issue or have any suggestion, please open an [issue](https://github.com/yeasin2002/nextjs-starter-template/issues) or a [pull request](https://github.com/yeasin2002/nextjs-starter-template/pulls).
+
+##### Feel free to reach out to me on [Linkedin](https://www.linkedin.com/in/yeasin2002/) or [Gmail](mailto:mdkawsarislam2002@gmail.com) if you have any questions or feedback.
 
 ## ✨ Features
 
@@ -47,14 +52,14 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 - 📦 **Bundle Analyzer** for optimization
 
 ### 🐳 **DevOps & Deployment**
-- 🐳 **Docker** with multi-stage builds
-- 🔄 **Docker Compose** for development/production
+<!-- - 🐳 **Docker** with multi-stage builds -->
+<!-- - 🔄 **Docker Compose** for development/production -->
 - 🏥 **Health checks** and monitoring
 - 📈 **Performance monitoring** with React Scan
 
 ### 🛡️ **Security & Performance**
 - 🔒 **Security headers** configured
-- 🚀 **Standalone output** for Docker
+<!-- - 🚀 **Standalone output** for Docker -->
 - 📊 **OpenTelemetry** integration
 - ⚡ **Edge runtime** support
 
@@ -142,7 +147,7 @@ npm run knip         # Check for unused code
 npm run codehawk     # Analyze code quality
 ```
 
-### 🐳 **Docker**
+<!-- ### 🐳 **Docker**
 ```bash
 npm run docker:build # Build Docker image
 npm run docker:dev   # Run development container (Linux/Mac)
@@ -152,7 +157,7 @@ npm run docker:test  # Run test container (Linux/Mac)
 
 # Windows users can also use:
 # scripts/docker-dev.bat  # Run development container (Windows)
-```
+``` -->
 
 ### 📚 **Storybook**
 ```bash
@@ -204,14 +209,14 @@ Copy `.env.example` to `.env` and configure:
 
 ## 🚀 Deployment
 
-### Docker Deployment
+<!-- ### Docker Deployment
 ```bash
 # Build production image
 npm run docker:build
 
 # Run production container
 npm run docker:prod
-```
+``` -->
 
 ### Vercel Deployment
 1. Connect your repository to Vercel
@@ -236,8 +241,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
 - [Drizzle ORM](https://orm.drizzle.team/) - TypeScript ORM
-
-
 ---
 
-⭐ **Star this repository if it helped you!**
+
