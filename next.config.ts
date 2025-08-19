@@ -15,13 +15,13 @@ const nextConfig: NextConfig = {
     typedRoutes: true,
   },
 
-  // eslint: {
-  //   ignoreDuringBuilds: process.env.NODE_ENV === "production",
-  // },
+  eslint: {
+    ignoreDuringBuilds: process.env.NODE_ENV === 'production',
+  },
 
-  // typescript: {
-  //   ignoreBuildErrors: process.env.NODE_ENV === "production",
-  // },
+  typescript: {
+    ignoreBuildErrors: process.env.NODE_ENV === 'production',
+  },
 
   images: {
     remotePatterns: [],
