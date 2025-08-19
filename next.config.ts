@@ -29,10 +29,6 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.clerk.dev',
       },
-      {
-        protocol: 'https',
-        hostname: 'img.clerk.com',
-      },
     ],
     unoptimized: process.env.NODE_ENV === 'development',
   },

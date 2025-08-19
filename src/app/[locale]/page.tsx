@@ -158,8 +158,7 @@ export default async function HomePage() {
                     Authentication Ready
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Complete auth system with Clerk integration. Social logins, MFA, user
-                    management, and passwordless authentication out of the box.
+                    Complete auth system with better auth integration. Social logins,
                   </p>
                 </div>
               </div>
