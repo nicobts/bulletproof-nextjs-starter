@@ -24,12 +24,7 @@ const nextConfig: NextConfig = {
   // },
 
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.clerk.dev',
-      },
-    ],
+    remotePatterns: [],
     unoptimized: process.env.NODE_ENV === 'development',
   },
 

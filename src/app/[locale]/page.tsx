@@ -1,7 +1,6 @@
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-// import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import { ArrowRight, Code2, Database, Palette, Shield, Sparkles, TestTube, Zap } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 

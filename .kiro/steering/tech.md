@@ -18,7 +18,7 @@
 - Database migrations via `drizzle-kit`
 
 ## Authentication
-- **Clerk** for user authentication and management
+- **better-auth** for user authentication and management
 
 ## Internationalization
 - **next-intl** for i18n support with locale routing

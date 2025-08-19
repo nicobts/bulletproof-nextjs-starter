@@ -3,7 +3,6 @@
 This is a Next.js starter template/boilerplate designed for rapid application development. The project provides a comprehensive foundation for building modern web applications with:
 
 - Full-stack TypeScript setup
-- Authentication ready (Clerk integration)
 - Database integration with multiple provider support
 - Internationalization (i18n) support
 - Component library with shadcn/ui

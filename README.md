@@ -24,7 +24,7 @@ A production-ready Next.js boilerplate with modern tooling, comprehensive testin
 - 🎛️ **Drizzle Studio** for database management
 
 ### 🔐 **Authentication**
-- 👤 **Clerk** integration for user management
+- 👤 **better-auth** integration for auth  management
 - 🔒 **Secure** authentication flows
 - 📧 **Email templates** with React Email
 
@@ -192,7 +192,6 @@ npm run analyze      # Analyze bundle size
 ### Environment Variables
 Copy `.env.example` to `.env` and configure:
 - Database connection
-- Clerk authentication keys
 - Optional: Sentry, PostHog, Stripe, etc.
 
 ### Database Setup
@@ -201,9 +200,7 @@ Copy `.env.example` to `.env` and configure:
 3. Optional: Seed data: `npm run db:seed`
 
 ### Authentication
-1. Create a Clerk account at [clerk.com](https://clerk.com)
-2. Add your Clerk keys to `.env`
-3. Customize sign-in/sign-up URLs as needed
+- Better Auth 
 
 ## 🚀 Deployment
 
@@ -239,7 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - Beautiful UI components
 - [Drizzle ORM](https://orm.drizzle.team/) - TypeScript ORM
-- [Clerk](https://clerk.com/) - Authentication platform
+
 
 ---
 
