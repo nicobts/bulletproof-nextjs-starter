@@ -98,7 +98,6 @@
     "embla-carousel-react": "latest",
     "eslint-plugin-import": "^2.32.0",
     "gel": "latest",
-    "hono": "^4.8.12",
     "input-otp": "latest",
     "knex": "latest",
     "kysely": "latest",

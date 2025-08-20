@@ -60,7 +60,6 @@
         "embla-carousel-react": "latest",
         "eslint-plugin-import": "^2.32.0",
         "gel": "latest",
-        "hono": "^4.8.12",
         "input-otp": "latest",
         "knex": "latest",
         "kysely": "latest",
@@ -1710,8 +1709,6 @@
     "hermes-estree": ["hermes-estree@0.29.1", "", {}, ""],
 
     "hermes-parser": ["hermes-parser@0.29.1", "", { "dependencies": { "hermes-estree": "0.29.1" } }, ""],
-
-    "hono": ["hono@4.9.2", "", {}, "sha512-UG2jXGS/gkLH42l/1uROnwXpkjvvxkl3kpopL3LBo27NuaDPI6xHNfuUSilIHcrBkPfl4y0z6y2ByI455TjNRw=="],
 
     "hosted-git-info": ["hosted-git-info@7.0.2", "", { "dependencies": { "lru-cache": "^10.0.1" } }, ""],
 
