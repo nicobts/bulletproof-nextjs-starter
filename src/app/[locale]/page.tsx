@@ -45,20 +45,24 @@ export default async function HomePage() {
           </div>
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            {/* <SignedIn>
-              <UserButton />
-            </SignedIn>
-            <SignedOut>
+            <a href="/dashboard">
               <Button variant="outline" size="sm">
-                <SignInButton>Sign in</SignInButton>
+                Dashboard
               </Button>
+            </a>
+            <a href="/login">
+              <Button variant="outline" size="sm">
+                Login
+              </Button>
+            </a>
+            <a href="/signup">
               <Button
                 size="sm"
                 className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
               >
-                Get Started
+                Signup
               </Button>
-            </SignedOut> */}
+            </a>
           </div>
         </div>
       </header>
@@ -243,6 +247,22 @@ export default async function HomePage() {
                   <p className="text-slate-600 dark:text-slate-400">
                     Built with Next.js 15 App Router, Server Components, and modern optimization
                     techniques for lightning-fast performance.
+                  </p>
+                </div>
+              </div>
+
+              {/* Multitenancy */}
+              <div className="group relative overflow-hidden rounded-2xl border border-slate-200/50 bg-white/50 p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:shadow-yellow-500/10 dark:border-slate-800/50 dark:bg-slate-900/50 dark:hover:shadow-yellow-400/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-orange-500/5 opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="relative">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-yellow-500 to-orange-600">
+                    <Sparkles className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="mb-3 text-xl font-semibold text-slate-900 dark:text-white">
+                    Multitenancy Ready
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400">
+                    A full-featured multitenant application frontend with a dashboard for managing tenants, users, and todos, with role-based access control (RBAC).
                   </p>
                 </div>
               </div>
